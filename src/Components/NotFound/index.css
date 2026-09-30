@@ -1,0 +1,176 @@
+.not-found-page {
+  min-height: 100vh;
+  display: flex;
+  background-color: #181818;
+}
+
+.not-found-container {
+  flex: 1;
+  margin-left: 80px;
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.error-code {
+  margin: 0;
+  font-size: 180px;
+  font-weight: 700;
+  color: #1db954;
+  line-height: 1;
+}
+
+.error-message {
+  margin-top: 20px;
+  margin-bottom: 12px;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.error-description {
+  margin: 0;
+  max-width: 500px;
+
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Back to Home Link */
+
+.home-button {
+  margin-top: 32px;
+
+  color: #ffffff !important;
+  text-decoration: none !important;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: color 0.3s ease;
+}
+
+.home-button:hover {
+  color: #1db954 !important;
+  text-decoration: none !important;
+}
+
+.home-button:visited {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.home-button:active {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.home-button:focus {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  outline: none;
+}
+
+@media screen and (max-width: 992px) {
+  .not-found-container {
+    margin-left: 80px;
+    padding: 35px 20px;
+  }
+
+  .error-code {
+    font-size: 150px;
+  }
+
+  .error-message {
+    font-size: 26px;
+  }
+
+  .error-description {
+    font-size: 16px;
+  }
+
+  .home-button {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .not-found-container {
+    margin-left: 0;
+    margin-bottom: 70px;
+    padding: 30px 18px;
+  }
+
+  .error-code {
+    font-size: 120px;
+  }
+
+  .error-message {
+    font-size: 22px;
+  }
+
+  .error-description {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .home-button {
+    font-size: 16px;
+    margin-top: 28px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .not-found-container {
+    margin-left: 0;
+    margin-bottom: 70px;
+    padding: 20px 16px;
+  }
+
+  .error-code {
+    font-size: 90px;
+  }
+
+  .error-message {
+    font-size: 20px;
+  }
+
+  .error-description {
+    width: 95%;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .home-button {
+    font-size: 15px;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .error-code {
+    font-size: 72px;
+  }
+
+  .error-message {
+    font-size: 18px;
+  }
+
+  .error-description {
+    font-size: 13px;
+  }
+
+  .home-button {
+    font-size: 14px;
+  }
+}

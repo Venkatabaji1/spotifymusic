@@ -1,0 +1,122 @@
+.album-card {
+  list-style-type: none;
+
+  width: 100%;
+
+  transition: all 0.3s ease;
+}
+
+.album-card:hover {
+  transform: translateY(-8px);
+}
+
+.album-link {
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.album-image-container {
+  width: 100%;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background: #222;
+
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+.album-image {
+  width: 100%;
+
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+.album-card:hover .album-image {
+  transform: scale(1.08);
+}
+
+.album-details {
+  margin-top: 12px;
+}
+
+.album-name {
+  color: #ffffff;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+.album-subtitle {
+  margin-top: 6px;
+
+  color: #b3b3b3;
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+.album-card:hover .album-title {
+  color: #1db954;
+}
+
+@media screen and (min-width: 1200px) {
+  .album-title {
+    font-size: 18px;
+  }
+
+  .album-subtitle {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .album-title {
+    font-size: 16px;
+  }
+
+  .album-subtitle {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .album-image-container {
+    border-radius: 14px;
+  }
+
+  .album-title {
+    font-size: 15px;
+  }
+
+  .album-subtitle {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .album-title {
+    font-size: 14px;
+  }
+
+  .album-subtitle {
+    font-size: 11px;
+  }
+}
